@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>project </title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+      <div class="photo-container"> 
+        <div class="img_with_filter"></div>
+        <span class="circle" draggable="true"></span>
+      </div>
+
+      <div class="filters-container">
+        <div class="filter"> <span class="filterName">contrast</span> <img src="https://images.unsplash.com/photo-1485288734756-0b31a0a31d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="preview" class="filterImg filter-1"  draggable="true"></div>
+        <div class="filter"> <span class="filterName">brightness</span> <img src="https://images.unsplash.com/photo-1485288734756-0b31a0a31d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="preview" class="filterImg filter-2"  draggable="true"></div>
+        <div class="filter"> <span class="filterName">gray</span> <img src="https://images.unsplash.com/photo-1485288734756-0b31a0a31d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="preview" class="filterImg filter-3"  draggable="true"></div>
+        <div class="filter"> <span class="filterName">saturate</span> <img src="https://images.unsplash.com/photo-1485288734756-0b31a0a31d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="preview" class="filterImg filter-4"  draggable="true"></div>
+        <div class="filter"> <span class="filterName">sepia</span> <img src="https://images.unsplash.com/photo-1485288734756-0b31a0a31d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="preview" class="filterImg filter-5"  draggable="true"></div>
+      </div>
+
+      <p class="text">Drag filter to left side</p>
+      <p class="range-text">Filter intensity: <span>1.5</span></p>
+      <div class="range-wrapper">
+        <input type="range" min="0" max="2" step="0.01" value="1.5" class="range">
+      </div>
+      <p class="range-text">Load image</p> 
+      <div class="loadFile">
+        <input type="text" placeholder="https://images" class="link"
+        value="https://images.unsplash.com/photo-1485288734756-0b31a0a31d95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+        <p>or</p>
+        <input class="inputFile" type="file" name="files[]">
+      </div>
+      
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
